@@ -11,7 +11,7 @@ do
      mkdir -p ${media}
      if [ `cat /etc/fstab | grep $dev | wc -l` -eq 0 ] 
      then
-       echo "${dev} ${media}   xfs    defaults        0       2" >> /etc/fstab
+       echo "${dev} ${media}   xfs    defaults,nofail        0       0" >> /etc/fstab
      fi
      mount ${dev}
      chmod 777 ${media}
