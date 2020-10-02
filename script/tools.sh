@@ -5,7 +5,7 @@ SUDO=sudo
 
 $SUDO apt -y update
 $SUDO apt -y full-upgrade
-$SUDO apt -y install mc tmux emacs-nox rsync wget
+$SUDO apt -y install mc tmux emacs-nox rsync wget ifupdown2
 
 cat >> ~/.bashrc<<'EOF'
 
