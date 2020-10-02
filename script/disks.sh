@@ -9,7 +9,7 @@ do
  then
      mkfs.xfs -f $dev
      mkdir -p ${media}
-     echo "${dev} ${media}   xfs    defaults        0       0" >> /etc/fstab
+     echo "${dev} ${media}   xfs    defaults,nobootwait        0       2" >> /etc/fstab
      mount ${dev}
      chmod 777 ${media}
  fi
