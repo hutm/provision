@@ -1,6 +1,9 @@
 #!/bin/bash
 set -ex
 
+mkdir -p /media/sda
+chmod 777 /media/sda
+
 for disk in b c d e f g h j k
 do
  dev=/dev/sd${disk}
@@ -17,4 +20,3 @@ do
      chmod 777 ${media}
  fi
 done
-
