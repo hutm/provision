@@ -16,7 +16,8 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 
+DOCKER_VERSION=5:19.03.14~3-0~ubuntu-bionic
 sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+sudo apt-get install -y docker-ce=${DOCKER_VERSION} docker-ce-cli=${DOCKER_VERSION} containerd.io
 
 sudo usermod -aG docker user
