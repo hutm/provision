@@ -1,6 +1,9 @@
 #!/bin/bash
 set -ex
 
+# for clone
+mdkir -p /mnt/gdrive0
+
 mkdir -p /media/sda
 chmod 777 /media/sda
 
